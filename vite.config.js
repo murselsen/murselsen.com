@@ -13,7 +13,7 @@ export default defineConfig(({ command }) => {
         define: {
             [command === 'serve' ? 'global' : '_global']: {},
         },
-        base: '/',
+        base: appMode === 'development' ? '/' : `/${appName}/`,
         root: 'src',
         build: {
             sourcemap: true,
