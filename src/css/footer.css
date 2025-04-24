@@ -13,7 +13,7 @@
     padding: 12px 24px;
     color: var(--font-body-color);
     border-inline-end: 1px solid #314158;
-    font: var(--font-body-md);
+    font: var(--font-body-sm);
     height: 100%;
     text-align: center;
 }

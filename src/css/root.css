@@ -57,7 +57,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    padding-block: 16px;
+    padding: 16px;
 }
 
 body {
@@ -67,8 +67,8 @@ body {
     height: calc(100vh - 32px);
 }
 
+/*  */
 #app {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
