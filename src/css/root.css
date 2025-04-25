@@ -1,4 +1,5 @@
 :root {
+    --background: #020618;
     --font-family-text: "Fira Code", monospace;
     /* Heading Fonts */
     --font-heading-color: #F8FAFC;
@@ -41,6 +42,10 @@
     --color-warning-hover: #FDC700;
     --color-link: #FFA1AD;
     --color-link-hover: #FFCCD2;
+    --color-indigo: #615FFF;
+    --color-indigo-hover: #A8A2FF;
+    --color-teal: #00D5BE;
+    --color-teal-hover: #00E4D8;
 }
 
 
@@ -48,16 +53,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
     font-family: "Fira Code", monospace;
-    background: #020618;
+    background: var(--background);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     padding: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 body {

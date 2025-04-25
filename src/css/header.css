@@ -51,10 +51,14 @@
 }
 
 .Navbar .Navbar__content:where(.active) {
+    position: fixed;
+    top: 80px;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     padding-top: 12px;
-    height: 100%;
+    width: 94%;
+    height: max-content;
 }
 
 .Navbar .Navbar__content:where(.active) .Navbar__content-title {
@@ -69,7 +73,7 @@
 .Navbar .Navbar__content:where(.active) .Navbar__content-list {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
 }
 
 .Navbar .Navbar__content:where(.active) .Navbar__content-list .Navbar__content-item:first-child {
