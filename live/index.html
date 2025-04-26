@@ -8,21 +8,43 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/index.css">
   <title>murselsen | Home </title>
+  <script type="module" crossorigin src="/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DKEA-4Dk.css">
+  <link rel="stylesheet" crossorigin href="/assets/vendor-DsD6kTXe.css">
 </head>
 
 <body>
   <div id="app">
     <header>
-      <load src="partials/header.html" />
+      <nav class="Navbar">
+    <div class="Navbar__header">
+        <div class="Navbar__header-logo">
+            <a href="/" class="logo-title">mursel-sen</a>
+        </div>
+        <div class="Navbar__header-toggle">
+            <button class="navbar-toggle" id="navbar-toggle">
+                <i class="ri-menu-line" id="navbar-toggle-icon"></i>
+            </button>
+        </div>
+    </div>
+    <div class="Navbar__content" id="navbar-menu">
+        <p class="Navbar__content-title"># navigate:</p>
+        <ul class="Navbar__content-list">
+            <li class="Navbar__content-item"><a href="index.html">_hello</a></li>
+            <li class="Navbar__content-item"><a href="about.html">_about</a></li>
+            <li class="Navbar__content-item"><a href="project.html">_project</a></li>
+            <li class="Navbar__content-item"><a href="contact-me.html">_contact-me</a></li>
+        </ul>
+    </div>
+</nav>
     </header>
     <main>
       <div class="container">
         <div class="content">
           <div class="content__introduction">
             <p class="message">Hi all. I am
+            <h2>v0.2</h2>
             </p>
             <h1 class="username">Mürsel Şen</h1>
             <p class="mission">> Junior Full Stack developer</p>
@@ -51,10 +73,36 @@
       </div>
     </main>
     <footer>
-      <load src="partials/footer.html" />
+      <div class="Footer">
+    <div class="Footer__content-left">
+        <ul class="Footer__content-list">
+            <li class="Footer__content-item">
+                <p>find me in:</p>
+            </li>
+            <li class="Footer__content-item">
+                <a href="#">
+                  <span>@</span>  <i class="ri-instagram-fill"></i>
+                </a>
+            </li>
+            <li class="Footer__content-item">
+                <a href="#">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="Footer__content-right">
+        <ul class="Footer__content-list">
+            <li class="Footer__content-item">
+                <a href="#">
+                    <span>@murselsen</span> <i class="ri-github-fill"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
     </footer>
   </div>
-  <script type="module" src="main.js"></script>
 </body>
 
 </html>

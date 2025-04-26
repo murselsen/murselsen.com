@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 12px;
-    width: 94%;
+    width: 93%;
     height: max-content;
 }
 
@@ -97,4 +97,25 @@
 
 .Navbar .Navbar__content:where(.active) .Navbar__content-list .Navbar__content-item:where(.active) {
     border-bottom: 3px solid var(--color-primary) !important;
+}
+
+@media (min-width: 768px) {
+    .Navbar {
+        height: auto;
+        flex-direction: row;
+    }
+
+
+
+    .Navbar .Navbar__header .Navbar__header-logo {
+        width: auto;
+    }
+
+    .Navbar .Navbar__header .Navbar__header-toggle {
+        display: none;
+    }
+
+    .Navbar .Navbar__content {
+        display: flex;
+    }
 }
