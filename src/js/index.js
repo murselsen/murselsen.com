@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         myPhoto.src = `${axios.defaults.baseURL}/photos/${randomPhoto.name}`;
     }
     randomMyPhotoRender();
-    setTimeout(randomMyPhotoRender(), 1000);
+    setInterval(() => {
+        randomMyPhotoRender();
+    }, 3500);
 
 });
