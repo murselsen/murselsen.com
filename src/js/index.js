@@ -1,17 +1,16 @@
+import axios from "axios";
 const myPhoto = document.querySelector("#myPhoto");
+document.addEventListener("DOMContentLoaded", async () => {
+    const myPhotos = await axios.get("/photos");
+    console.log(myPhotos);
+    const randomMyPhotoRender = () => {
+        const randomNumber = Math.floor(Math.random() * myPhotos.data.dbPhotos.length);
 
-const randomMyPhoto = () => {
-    const myPhotos = [
-        "IMG_20240713_150251.jpg",
-        "IMG_20250209_213136.jpg",
-        "IMG_20230101_163047.jpg",
-        "IMG_20231015_135507.jpg",
-        "IMG_20250208_145135.jpg",
-        "IMG_20250303_145425.jpg",
-    ]
-    const randomNumber = Math.floor(Math.random() * myPhotos.length);
+        const randomPhoto = myPhotos.data.dbPhotos[randomNumber];
 
-    const randomPhoto = myPhotos[randomNumber];
-    myPhoto.src = `./images/myPhoto/${randomPhoto}`;
-}
-setTimeout(() => randomMyPhoto(), 1000);
+        myPhoto.src = `${axios.defaults.baseURL}/photos/${randomPhoto.name}`;
+    }
+    randomMyPhotoRender();
+    setTimeout(randomMyPhotoRender(), 1000);
+
+});
