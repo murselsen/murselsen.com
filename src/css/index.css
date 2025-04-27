@@ -1,20 +1,3 @@
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-.container .content {
-    background-image: url("../images/green-layer.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 75px;
-    padding: 40px;
-}
-
 .container .content .content__introduction,
 .container .content .content__link {
     display: flex;
@@ -58,40 +41,52 @@
     color: var(--color-link);
 }
 
-.container .media {
-    display: none;
-}
 
 @media (min-width: 768px) {
-    #app {
-        background-image: url("../images/green-layer.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
-    main {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .container {
-
-        height: 100%;
-    }
 
     .container .content {
         background: transparent;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 130px;
+        flex-direction: column;
         padding: 80px;
-        background-position: center;
-
+        background-position: 10px 10px;
+        justify-content: center;
+        align-items: flex-end;
     }
 
+    .container .content .content__introduction,
+    .container .content .content__link {
+        width: 80%;
+    }
 
+    .container .media {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .container .media .profile {
+        width: 800px;
+        height: 80%;
+    }
+
+    .container .media .profile .profile__image {
+        width: 90%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: var(--radius-card);
+        box-shadow: -11px -11px 20px 0px var(--color-indigo);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        filter: grayscale(0.5);
+    }
+
+    .container .media .profile .profile__image:hover {
+        filter: grayscale(0);
+        box-shadow: 1px -1px 19px 10px var(--color-teal-hover);
+    }
 
 
 }

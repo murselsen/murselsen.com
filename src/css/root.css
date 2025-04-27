@@ -83,3 +83,58 @@ body {
     justify-content: space-between;
     height: 100%;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content {
+    background-image: url("../images/green-layer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    padding: 40px;
+
+}
+
+.container .media {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+
+    main {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .container {
+
+        height: 100%;
+        flex-direction: row;
+        box-sizing: border-box;
+        background-image: url("../images/green-layer.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    .container .content,
+    .container .media {
+        width: 50%;
+        height: 100%;
+        display: flex;
+    }
+
+
+
+
+}
