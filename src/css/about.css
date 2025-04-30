@@ -1,0 +1,101 @@
+#app main {
+    flex: 2;
+
+}
+
+.container {
+    height: 100%;
+}
+
+
+/* Sidebar */
+.container .sidebar {
+    width: 100%;
+    height: max-content;
+
+}
+
+.sidebar .sidebar__accordion {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.sidebar .sidebar__accordion .sidebar__accordion-item {
+    border: 1px solid #314158;
+    border-top: none;
+    gap: 4px;
+}
+
+.sidebar .sidebar__accordion .sidebar__accordion-item .sidebar__accordion-item__list {
+    /* display: none; */
+    display: flex;
+    padding: 12px 24px;
+    flex-direction: column;
+    gap: 8px;
+
+
+}
+
+.sidebar .sidebar__accordion .sidebar__accordion-item .sidebar__accordion-item__list .sidebar__accordion-item__list-item a {
+    display: flex;
+    gap: 12px;
+    font: var(--font-body-md);
+    text-decoration: none;
+}
+
+.sidebar .sidebar__accordion .sidebar__accordion-item .sidebar__accordion-item__list:where(.active) {
+    display: flex;
+
+}
+
+.sidebar .sidebar__accordion .sidebar__accordion-item .sidebar__accordion-item-title {
+    color: var(--color-slate);
+    width: 100%;
+    border-bottom: 1px solid #314158;
+    padding: 12px 24px;
+    background-color: #314158;
+    font: var(--font-body-md);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+}
+
+.sidebar .sidebar__accordion .sidebar__accordion-item .sidebar__accordion-item-title:hover {
+    background-color: var(--color-slate-hover);
+    color: #fff;
+}
+
+.sidebar .sidebar__accordion .sidebar__accordion-item .sidebar__accordion-item-title::before {
+    content: "<";
+    display: inline-block;
+}
+
+.sidebar .sidebar__accordion .sidebar__accordion-item .sidebar__accordion-item-title::after {
+    content: " />";
+    display: inline-block;
+    margin-left: 4px;
+}
+
+
+/* Content */
+.container .content {
+
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .container .sidebar {
+        min-width: calc(128px + 144px);
+        width: max-content;
+        height: 100%;
+
+    }
+
+    .container .content {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

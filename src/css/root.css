@@ -71,7 +71,6 @@ html {
 
 body {
     margin: 0 auto;
-
     height: calc(100vh - 32px);
 }
 
@@ -84,6 +83,17 @@ body {
     border-radius: 10px;
     border: 1px solid #314158;
 }
+
+#app header,
+#app footer {
+    flex: 1;
+    max-height: 60px;
+}
+
+#app footer {
+    max-height: 50px;
+}
+
 
 .container {
     display: flex;
@@ -124,6 +134,7 @@ body {
 
     #app main {
         flex: 2;
+
     }
 
 
