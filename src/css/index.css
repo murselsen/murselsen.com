@@ -18,6 +18,7 @@
 .container .content .mission {
     font: var(--font-heading-h6);
     color: var(--color-indigo);
+    text-transform: capitalize;
 }
 
 .container .content .code {
