@@ -1,3 +1,10 @@
+.container .content {
+    background-image: url("../images/green-layer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
 .container .content .content__introduction,
 .container .content .content__link {
     display: flex;
@@ -56,6 +63,7 @@
 
 
     .container .content {
+
         background: transparent;
         flex-direction: column;
         padding: 80px;

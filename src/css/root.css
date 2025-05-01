@@ -88,7 +88,7 @@ body {
     justify-content: space-between;
     height: 100%;
     border-radius: 10px;
-    border: 1px solid #314158;
+    /* border: 1px solid #314158; */
 }
 
 #app header,
@@ -108,10 +108,7 @@ body {
 }
 
 .container .content {
-    background-image: url("../images/green-layer.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -127,6 +124,7 @@ body {
 @media (min-width: 768px) {
     #app {
         height: 100%;
+        border: 1px solid #314158;
     }
 
     #app header,

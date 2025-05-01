@@ -1,7 +1,7 @@
 .Footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #314158;
+    border: 1px solid #314158;
 }
 
 .Footer__content-list {
