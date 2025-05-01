@@ -223,7 +223,7 @@
     padding: 8px 16px;
     background-color: #45556C;
     color: var(--font-body-color);
-    font: var(--font-body-sm);
+    font: var(--font-body-md);
     border-radius: var(--radius-box);
     text-decoration: none;
     transition: all 0.3s ease-in-out;
@@ -231,7 +231,7 @@
 
 .content__gh-list-item__footer .Controllers .Controllers-link:hover {
     background-color: var(--color-slate-hover);
-    font: var(--font-body-md);
+    font: var(--font-body-lg);
     color: #fff;
 }
 
@@ -279,6 +279,11 @@
 
     }
 
+    .content .content__gh {
+        display: flex;
+        align-items: center;
+    }
+
     .content .content__about {
         color: var(--font-body-color);
         font: var(--font-body-lg);
@@ -300,6 +305,20 @@
         margin-block: 2.5px;
         font: var(--font-body-lg);
         padding-left: 16px;
+    }
+
+    .content__gh-list-item .content__gh-list-item__main .content__gh-list-item__main-alt {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content__gh-list-item .content__gh-list-item__main .content__gh-list-item__languages {
+        width: auto;
+
+    }
+
+    .content__gh-list .content__gh-list-item .content__gh-list-item__footer {
+        flex-direction: row;
     }
 
 }
