@@ -90,22 +90,22 @@
     color: var(--font-body-color);
 }
 
-.content .content__about .content__about-tag {
+.content__about .content__about-tag {
     display: none;
 }
 
-.content .content__about .content__about-text {
+.content__about .content__about-text {
     display: inline-block;
     margin-block: 2px;
 }
 
 
-.content .content__gh .content__gh-title {
+.content__gh .content__gh-title {
     display: none;
     font: var(--font-heading-h4);
 }
 
-.content .content__gh .content__gh-list {
+.content__gh .content__gh-list {
     display: flex;
     flex-direction: column;
 }
@@ -179,6 +179,12 @@
     text-align: right;
 }
 
+.content__gh-list-item .content__gh-list-item__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .content__gh-list-item__footer .Contributors {
     display: flex;
     flex: 2;
@@ -206,6 +212,27 @@
     font: var(--font-body-md);
     color: var(--font-body-color);
 
+}
+
+.content__gh-list-item__footer .Controllers {
+    display: flex;
+    gap: 20px;
+}
+
+.content__gh-list-item__footer .Controllers .Controllers-link {
+    padding: 8px 16px;
+    background-color: #45556C;
+    color: var(--font-body-color);
+    font: var(--font-body-sm);
+    border-radius: var(--radius-box);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.content__gh-list-item__footer .Controllers .Controllers-link:hover {
+    background-color: var(--color-slate-hover);
+    font: var(--font-body-md);
+    color: #fff;
 }
 
 
