@@ -39,7 +39,7 @@
 
 @media (min-width: 768px) {
   #app {
-    height: calc(100vh - 32px);
+    height: calc(100vh);
     border: 1px solid #314158;
   }
 

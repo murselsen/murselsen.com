@@ -18,7 +18,7 @@ const Footer = () => {
                             </a>
                         </li>
                         <li className="Footer__content-item">
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/murselsen/">
                                 <i className="ri-linkedin-fill"></i>
                             </a>
                         </li>
