@@ -57,25 +57,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
   }
 
 
-  .container .content,
-  .container .media {
-    width: 50%;
-    height: 100%;
-    display: flex;
-  }
-}
 
-@media (max-height: 1024px) {
-  .container .media {
-    align-items: end;
-  }
-
-  .container .media .profile {
-    width: 500px;
-    height: 100%;
-    max-height: 450px;
-  }
 }

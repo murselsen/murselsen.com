@@ -2,7 +2,8 @@
     color: var(--font-body-color);
     font: var(--font-body-sm);
     display: flex;
-    gap: 7px;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .code .constant {
