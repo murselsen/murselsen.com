@@ -4,6 +4,7 @@ const AboutSidebar = () => {
     return (
         <div class="sidebar">
             <AccordionList />
+
         </div>
     )
 }
