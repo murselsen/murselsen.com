@@ -13,24 +13,24 @@
     border: 1px solid #314158;
 }
 
-.Navbar .Navbar__header .Navbar__header-logo {
+.Navbar .Navbar__header .Navbar__headerLogo {
     width: 90%;
     padding: 16px 24px;
     font: var(--font-body-md)
 }
 
-.Navbar .Navbar__header .Navbar__header-logo .logo-title {
+.Navbar .Navbar__header .Navbar__headerLogo .logoTitle {
     color: var(--font-body-color);
     text-decoration: none;
 }
 
-.Navbar .Navbar__header .Navbar__header-toggle {
+.Navbar .Navbar__header .Navbar__headerToggle {
     width: 10%;
     min-width: 56px;
     padding: 16px;
 }
 
-.Navbar .Navbar__header .Navbar__header-toggle .navbar-toggle {
+.Navbar .Navbar__header .Navbar__headerToggle .navbarToggle {
     width: 100%;
     height: 100%;
     font-size: 24px;
@@ -38,7 +38,7 @@
     cursor: pointer;
 }
 
-.Navbar .Navbar__header .Navbar__header-toggle .navbar-toggle {
+.Navbar .Navbar__header .Navbar__headerToggle .navbarToggle {
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -61,7 +61,7 @@
     height: max-content;
 }
 
-.Navbar .Navbar__content:where(.active) .Navbar__content-title {
+.Navbar .Navbar__content:where(.active) .Navbar__contentTitle {
     color: var(--font-body-color);
     font-weight: 400;
     font-size: 16px;
@@ -70,23 +70,23 @@
     padding: 12px 24px;
 }
 
-.Navbar .Navbar__content:where(.active) .Navbar__content-list {
+.Navbar .Navbar__content:where(.active) .Navbar__contentList {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.Navbar .Navbar__content:where(.active) .Navbar__content-list .Navbar__content-item:first-child {
+.Navbar .Navbar__content:where(.active) .Navbar__contentList .Navbar__contentItem:first-child {
     border-top: 1px solid #314158;
 }
 
-.Navbar .Navbar__content:where(.active) .Navbar__content-list .Navbar__content-item {
+.Navbar .Navbar__content:where(.active) .Navbar__contentList .Navbar__contentItem {
     padding: 12px 24px;
     border-bottom: 1px solid #314158;
 }
 
 
-.Navbar .Navbar__content:where(.active) .Navbar__content-list .Navbar__content-item a {
+.Navbar .Navbar__content:where(.active) .Navbar__contentList .Navbar__contentItem a {
     text-decoration: none;
     color: var(--font-heading-color);
     font-weight: 400;
@@ -95,7 +95,7 @@
     letter-spacing: 0%;
 }
 
-.Navbar .Navbar__content:where(.active) .Navbar__content-list .Navbar__content-item:where(.active) {
+.Navbar .Navbar__content:where(.active) .Navbar__contentList .Navbar__contentItem:where(.active) {
     border-bottom: 3px solid var(--color-primary) !important;
 }
 
@@ -111,7 +111,7 @@
 
 
     .Navbar .Navbar__header,
-    .Navbar .Navbar__header .Navbar__header-logo {
+    .Navbar .Navbar__header .Navbar__headerLogo {
         width: max-content;
         height: 100%;
     }
@@ -125,7 +125,7 @@
         border: none;
     }
 
-    .Navbar .Navbar__header .Navbar__header-toggle {
+    .Navbar .Navbar__header .Navbar__headerToggle {
         display: none;
     }
 
@@ -134,7 +134,7 @@
         width: 100%;
     }
 
-    .Navbar .Navbar__content .Navbar__content-list {
+    .Navbar .Navbar__content .Navbar__contentList {
         width: 100%;
         display: flex;
         align-items: center;
@@ -142,29 +142,29 @@
 
     }
 
-    .Navbar .Navbar__content .Navbar__content-list .Navbar__content-item {
+    .Navbar .Navbar__content .Navbar__contentList .Navbar__contentItem {
         border-inline: 1px solid #314158;
         padding: 16px 32px;
     }
 
-    .Navbar .Navbar__content .Navbar__content-list .Navbar__content-item a {
+    .Navbar .Navbar__content .Navbar__contentList .Navbar__contentItem a {
         font: var(--font-body-md);
         color: var(--font-body-color);
         text-decoration: none;
 
     }
 
-    .Navbar .Navbar__content .Navbar__content-list .Navbar__content-item:last-child {
+    .Navbar .Navbar__content .Navbar__contentList .Navbar__contentItem:last-child {
         margin-inline-start: auto;
         border-inline-end: none
     }
 
-    .Navbar__content-list .Navbar__content-item:where(.active) {
+    .Navbar__contentList .Navbar__contentItem:where(.active) {
         border-bottom: 3px solid var(--color-primary) !important;
         color: var(--font-body-color);
     }
 
-    .Navbar .Navbar__content .Navbar__content-title {
+    .Navbar .Navbar__content .Navbar__contentTitle {
         display: none;
     }
 
