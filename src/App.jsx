@@ -5,7 +5,7 @@ import AppCss from './App.module.css'
 
 // Pages
 import Home from './pages/Home/Home'
-// import About from './pages/About/About'
+import About from './pages/About/About'
 // Components
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'

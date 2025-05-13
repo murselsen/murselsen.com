@@ -9,7 +9,7 @@ const Header = () => {
     const handleNavbarMenuToggle = () => {
         setIsNavbarOpen(!isNavbarOpen);
     }
-    
+
     return (
         <nav className={NavbarCss.Navbar}>
             <div className={NavbarCss.Navbar__header}>
@@ -45,10 +45,8 @@ const MenuItem = ({ title, link, }) => {
     let result, active;
     if (link === "/") {
         result = pathname === link;
-        console.log("/", result)
     } else {
         result = pathname === "/" + link;
-        console.log("/" + link, result)
     }
     active = result;
     return (
