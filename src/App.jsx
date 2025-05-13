@@ -21,7 +21,7 @@ function App() {
         <div className={AppCss.container}>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About />} /> */}
+            <Route path="/about" element={<About />} />
             {/* <Route path="/projects" element={<AppProjects />} /> */}
             {/* <Route path="/contact-me" element={<AppContact />} /> */}
           </Routes>
