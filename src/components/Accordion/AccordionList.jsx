@@ -5,34 +5,51 @@ import './Accordion.css';
 const AccordionList = () => {
     return (
         <ul class="accordion">
-            <AccordionItem title="personal-info" list={[{
-                title: "Cv",
-                icon: "ri-file-pdf-2-line",
-                link: "#"
-            }]} />
-            <AccordionItem title="social-media" list={[{
-                title: "murselsen",
-                icon: "ri-github-fill",
-                link: "https://www.github.com/murselsen/"
-            }, {
-                title: "35.mursel",
-                icon: "ri-instagram-fill",
-                link: "https://www.instagram.com/35.mursel/"
-            },
-            {
-                title: "murselsen",
-                icon: "ri-linkedin-fill",
-                link: "https://www.linkedin.com/in/murselsen/"
-            }]} />
-            <AccordionItem title="contacts" list={[{
-                title: "murselsen_35",
-                icon: "ri-mail-fill",
-                link: "mailto:murselsen_35@hotmail.com"
-            }, {
-                title: "+90-533-147-49-24",
-                icon: "ri-phone-fill",
-                link: "tel:+905331474924"
-            }]} />
+            <AccordionItem title="personal-info" list={
+                [
+                    {
+                        title: "Cv",
+                        icon: "ri-file-pdf-2-line",
+                        link: "#"
+                    }
+                ]
+            } />
+            <AccordionItem title="social-media" list={
+                [
+                    {
+                        title: "murselsen",
+                        icon: "ri-github-fill",
+                        link: "https://www.github.com/murselsen/"
+                    }, {
+                        title: "35.mursel",
+                        icon: "ri-instagram-fill",
+                        link: "https://www.instagram.com/35.mursel/"
+                    },
+                    {
+                        title: "murselsen",
+                        icon: "ri-linkedin-fill",
+                        link: "https://www.linkedin.com/in/murselsen/"
+                    }, {
+                        title: "35mursel",
+                        icon: "ri-discord-fill",
+                        link: "https://discord.com/users/643474762085040138"
+                    }
+                ]
+            } />
+            <AccordionItem title="contacts" list={
+                [
+                    {
+                        title: "murselsen_35",
+                        icon: "ri-mail-fill",
+                        link: "mailto:murselsen_35@hotmail.com"
+                    },
+                    {
+                        title: "+90-533-147-49-24",
+                        icon: "ri-phone-fill",
+                        link: "tel:+905331474924"
+                    }
+                ]
+            } />
 
         </ul>
     )
