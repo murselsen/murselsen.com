@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { useLocation } from 'react-router'
+
+// Css
 import NavbarCss from './Header.module.css'
 import 'remixicon/fonts/remixicon.css'
 const Header = () => {
@@ -6,8 +9,8 @@ const Header = () => {
     const handleNavbarMenuToggle = () => {
         setIsNavbarOpen(!isNavbarOpen);
     }
+    
     return (
-
         <nav className={NavbarCss.Navbar}>
             <div className={NavbarCss.Navbar__header}>
                 <div className={NavbarCss.Navbar__headerLogo}>
@@ -37,9 +40,19 @@ const Header = () => {
     )
 }
 
-const MenuItem = ({ title, link }) => {
+const MenuItem = ({ title, link, }) => {
+    const { pathname } = useLocation();
+    let result, active;
+    if (link === "/") {
+        result = pathname === link;
+        console.log("/", result)
+    } else {
+        result = pathname === "/" + link;
+        console.log("/" + link, result)
+    }
+    active = result;
     return (
-        <li className={NavbarCss.Navbar__contentItem}><a href={link}>{title}</a></li>
+        <li className={active ? `${NavbarCss.Navbar__contentItem} ${NavbarCss.active}` : `${NavbarCss.Navbar__contentItem}`} ><a href={link}>{title}</a></li>
     )
 }
 

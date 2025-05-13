@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router";
 import AppCss from './App.module.css'
 
 
@@ -23,7 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             {/* <Route path="/about" element={<About />} /> */}
             {/* <Route path="/projects" element={<AppProjects />} /> */}
-            {/* <Route path="/contact" element={<AppContact />} /> */}
+            {/* <Route path="/contact-me" element={<AppContact />} /> */}
           </Routes>
         </div>
       </main>
