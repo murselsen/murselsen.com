@@ -1,7 +1,7 @@
 import React from "react";
 import Badge from "../../components/Badge/Badge";
 
-const GithubItem = ({ item }) => {
+const GithubItem = () => {
 
     return (
         <div className="content__gh-list-item">
@@ -9,10 +9,8 @@ const GithubItem = ({ item }) => {
             <div className="content__gh-list-item__main">
                 <h3 className="content__gh-list-item__title">Repo Name</h3>
                 <p className="content__gh-list-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam,
-                    voluptatum, unde, omnis
-                    voluptatibus
-                    esse suscipit.</p>
+                    Quisquam, voluptatum, unde, omnis voluptatibus esse suscipit.
+                </p>
 
                 <div className="content__gh-list-item__main-alt">
                     <div className="content__gh-list-item__tags">
@@ -22,22 +20,19 @@ const GithubItem = ({ item }) => {
                         <Badge title="Php" tag={true} />
                     </div>
                     <span className="content__gh-list-item__languages">
+                        <i className="ri-code-box-fill" style={{ marginInline: 10 }}></i>
                         <b>Javascript</b>
-                        <i className="ri-code-box-fill"></i>
                     </span>
                 </div>
             </div>
             <div className="content__gh-list-item__footer">
                 <ul className="Contributors">
-
                     <li className="Contributors-item">
                         <a href="#" className="Contributors-link" title="Username" target="_blank">
                             <img src="https://cdn-icons-png.flaticon.com/512/6858/6858463.png" alt="Username"
                                 className="Contributors-link__img" />
                         </a>
                     </li>
-
-
                 </ul>
                 <div className="Controllers">
 
