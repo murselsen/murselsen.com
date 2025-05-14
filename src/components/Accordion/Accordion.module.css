@@ -4,24 +4,24 @@
     list-style: none;
 }
 
-.accordion .accordion-item {
+.accordion .item {
     border: 1px solid #314158;
     border-top: none;
     gap: 4px;
 }
 
-.accordion .accordion-item .accordion-item__list {
+.accordion .item .list {
     display: none;
     padding: 12px 24px;
     flex-direction: column;
     gap: 8px;
 }
 
-.accordion .accordion-item .accordion-item__list:where(.active) {
+.accordion .item .list:where(.active) {
     display: flex;
 }
 
-.accordion .accordion-item .accordion-item__list .accordion-item__list-item a {
+.accordion .item .list .listItem a {
     display: flex;
     gap: 12px;
     font: var(--font-body-md);
@@ -31,7 +31,7 @@
 
 
 
-.accordion .accordion-item .accordion-item-title {
+.accordion .item .title {
     color: var(--color-slate);
     width: 100%;
     border-bottom: 1px solid #314158;
@@ -42,34 +42,34 @@
     transition: all 0.3s ease-in-out;
     text-transform: capitalize;
     display: inline-block;
-    
+
 }
 
-.accordion .accordion-item .accordion-item-title:hover {
+.accordion .item .title:hover {
     background-color: var(--color-slate-hover);
     color: #fff;
 }
 
-.accordion .accordion-item .accordion-item-title::before {
+.accordion .item .title::before {
     content: "<";
     display: inline-block;
 }
 
-.accordion .accordion-item .accordion-item-title::after {
+.accordion .item .title::after {
     content: " />";
     display: inline-block;
     margin-left: 4px;
 }
 
 @media (min-width: 768px) {
-    .sidebar .accordion .accordion-item .accordion-item__list {
+    .accordion .item .list {
         display: flex;
         padding: 12px 24px;
         flex-direction: column;
         gap: 8px;
     }
 
-    .sidebar .accordion .accordion-item .accordion-item__list:where(.active) {
+    .accordion .item .list.active {
         display: none;
     }
 }

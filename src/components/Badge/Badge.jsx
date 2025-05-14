@@ -1,5 +1,6 @@
 import React from 'react'
 import Css from './Badge.module.css'
+import 'remixicon/fonts/remixicon.css'
 
 const Badge = ({
     title,

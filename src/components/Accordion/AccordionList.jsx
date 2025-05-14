@@ -1,10 +1,10 @@
 import React, { Children } from 'react'
-import './Accordion.css';
+import Css from './Accordion.module.css';
 
 // AccordionList component
 const AccordionList = () => {
     return (
-        <ul class="accordion">
+        <ul className={Css.accordion}>
             <AccordionItem title="personal-info" list={
                 [
                     {
@@ -56,22 +56,34 @@ const AccordionList = () => {
 }
 
 const AccordionItem = ({ title, list }) => {
-    const [isAccordionAltListToggle, setAccordionAltListToggle] = React.useState(false);
+    const [isAccordionAltListToggle, setAccordionAltListToggle] = React.useState(true);
     return (
-        <li class="accordion-item">
-            <h5 class="accordion-item-title" onClick={() => { setAccordionAltListToggle(!isAccordionAltListToggle) }}>{title}</h5>
-            <ul class={isAccordionAltListToggle ? "accordion-item__list active" : "accordion-item__list"}>
+        <li className={Css.item}>
+            <h5 className={Css.title} onClick={() => { setAccordionAltListToggle(!isAccordionAltListToggle) }}>{title}</h5>
+            <ul className={!isAccordionAltListToggle ? `${Css.list} ${Css.active}` : Css.list}>
                 {list ? list.map((item, index) => (
-                    <li key={index} class="accordion-item__list-item">
-                        <a href={item.link} target="_blank">
-                            <i class={item.icon}></i>
-                            <span>{item.title}</span>
-                        </a>
-                    </li>
+                    <AccordionItem__AltItem
+                        key={index}
+                        className={Css.listItem}
+                        link={item.link}
+                        icon={item.icon}
+                        title={item.title}
+                    />
                 )) : null}
             </ul>
-        </li>
+        </li >
     )
 }
+
+const AccordionItem__AltItem = ({ className, link, icon, title }) => {
+    return (
+        <li className={className}>
+            <a href={link} target="_blank">
+                <i className={icon}></i>
+                <span>{title}</span>
+            </a>
+        </li>
+    )
+};
 
 export default AccordionList
