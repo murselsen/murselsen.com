@@ -1,0 +1,54 @@
+.GithubItem {
+    width: 100%;
+    height: max-content;
+    border: 1px solid #314158;
+    border-radius: var(--radius-card);
+    padding: 1px;
+}
+
+.img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.GithubItem .main,
+.GithubItem .footer {
+    border-bottom: 1px solid #314158;
+    background-color: var(--background);
+    color: var(--font-body-color);
+    padding: 16px 32px;
+}
+
+.GithubItem .main .title {
+    margin-bottom: 4px;
+}
+
+.GithubItem .main .text {
+    margin-bottom: 25px;
+}
+
+.GithubItem .main .mainAlt {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.GithubItem .main .mainAlt .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    flex: 2;
+    align-items: center;
+}
+
+.GithubItem .main .mainAlt .language {
+    width: 100%;
+    text-align: right;
+}
+
+
+@media (min-width: 768px) {}

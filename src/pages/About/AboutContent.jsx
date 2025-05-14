@@ -28,7 +28,7 @@ const AboutContent = () => {
             </div>
             <div className={Css.content__gh}>
 
-                <div className="content__gh-list" id="ghList">
+                <div className={Css.content__ghList} id="ghList">
                     <GithubItem />
                 </div>
             </div>

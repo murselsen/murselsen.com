@@ -20,6 +20,11 @@
      margin-block: 2px;
  }
 
+ .content__gh .content__ghList {
+     display: flex;
+     flex-direction: column;
+ }
+
 
  @media (min-width: 768px) {
      .about__content {
