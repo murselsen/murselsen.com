@@ -27,10 +27,10 @@ const Header = () => {
             <div className={isNavbarOpen ? `${NavbarCss.Navbar__content} ${NavbarCss.active}` : `${NavbarCss.Navbar__content}`} id="navbar-menu">
                 <p className={NavbarCss.Navbar__contentTitle}># navigate:</p>
                 <ul className={NavbarCss.Navbar__contentList} >
-                    <MenuItem type="menu" title="_home" link="/" />
-                    <MenuItem type="menu" title="_about_mee" link="about" />
-                    <MenuItem type="menu" title="_projects" link="project" />
-                    <MenuItem type="menu" title="_contact_me" link="contact-me" />
+                    <MenuItem type="menu" title="Home" link="/" />
+                    <MenuItem type="menu" title="About_Me" link="about" />
+                    <MenuItem type="menu" title="Projects" link="project" />
+                    <MenuItem type="menu" title="Contact_Me" link="contact-me" />
                     <li className={`${NavbarCss.Navbar__contentItem} ${NavbarCss.lang}`}><a href="#"> <img src="./images/icon/lg_enUS.png" width="25"
                         alt="english" /> <span>_EN-US</span></a></li>
                 </ul>

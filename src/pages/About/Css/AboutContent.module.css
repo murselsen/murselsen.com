@@ -23,7 +23,12 @@
  .content__gh .content__ghList {
      display: flex;
      flex-direction: column;
+     gap: 50px;
+     overflow-y: auto;
+     scrollbar-width: none;
  }
+
+
 
 
  @media (min-width: 768px) {
@@ -50,7 +55,6 @@
 
      .about__content .content__gh {
          display: flex;
-         align-items: center;
      }
 
      .about__content .content__info {

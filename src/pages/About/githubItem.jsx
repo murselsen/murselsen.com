@@ -1,11 +1,14 @@
 import React from "react";
 import Badge from "../../components/Badge/Badge";
 import Css from "./Css/GithubItem.module.css";
+
+// Copmonent
+import Contributors from "../../components/Contributors/Contributors";
 const GithubItem = () => {
 
     return (
         <div className={Css.GithubItem} >
-            <img src="https://api.murselsen.com//photos/IMG_20231015_135507.jpg" alt="Repo Name" className={Css.img} />
+            {/* <img src="https://api.murselsen.com//photos/IMG_20231015_135507.jpg" alt="Repo Name" className={Css.img} /> */}
             <div className={Css.main} a="content__gh-list-item__main">
                 <h3 className={Css.title}>Repo Name</h3>
                 <p className={Css.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -14,10 +17,8 @@ const GithubItem = () => {
 
                 <div className={Css.mainAlt}>
                     <div className={Css.tags}>
-                        <Badge title="Html" tag={true} />
-                        <Badge title="Css" tag={true} />
-                        <Badge title="JavaScript" tag={true} />
                         <Badge title="Php" tag={true} />
+                        <Badge title="Javascript" tag={true} />
                     </div>
                     <span className={Css.language}>
                         <i className="ri-code-box-fill" style={{ marginInline: 10 }}></i>
@@ -26,23 +27,20 @@ const GithubItem = () => {
                 </div>
             </div>
             <div className={Css.footer}>
-                <div className="Contributors">
-                    <div className="Contributors-item">
-                        <a href="#" className="Contributors-link" title="Username" target="_blank">
-                            <img src="https://cdn-icons-png.flaticon.com/512/6858/6858463.png" alt="Username"
-                                className="Contributors-link__img" />
-                        </a>
-                    </div>
-                </div>
-                <div className="Controllers">
+                <Contributors contributors={[
+                    {
+                        title: "Mürsel Sen",
+                    }
+                ]} />
+                <div className={Css.Controllers}>
 
-                    <a href="#" title="{RepoName} | Github Repository | " className="Controllers-link">
+                    <a href="#" title="{RepoName} | Github Repository | " className={Css.link}>
                         <i className="ri-red-packet-fill"></i>
                     </a>
-                    <a href="#" title="{RepoName} | Github Repository Releases | " className="Controllers-link">
+                    <a href="#" title="{RepoName} | Github Repository Releases | " className={Css.link}>
                         <i className="ri-github-fill"></i>
                     </a>
-                    <a href="#" title="{RepoName} | Page Link | " className="Controllers-link">
+                    <a href="#" title="{RepoName} | Page Link | " className={Css.link}>
                         <i className="ri-window-fill"></i>
                     </a>
                 </div>

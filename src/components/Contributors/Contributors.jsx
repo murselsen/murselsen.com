@@ -7,27 +7,33 @@ const Contributors = ({
 }) => {
     console.log(contributors);
     return (
-        <div className="Contributors">
+        <div className={Css.Contributors}>
             {contributors ? contributors.map((item, index) => (
-
+                <ContributorsItem key={index} title={item.title} />
             )) : null}
         </div>
     );
 }
 
-export default Contributors;
 
 
-const ContributorsItem = ({ className, link, icon, title }) => {
+const ContributorsItem = ({ link, imageLink, title }) => {
     return (
         <>
-            <div className="Contributors-item">
-                <a href="#" className="Contributors-link" title="Username" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/6858/6858463.png" alt="Username"
-                        className="Contributors-link__img" />
+            <div className={Css.item}>
+                <a href={link ? link : "#"} className={Css.link} title={title} target="_blank">
+                    <img src={
+                        imageLink ?
+                            imageLink
+                            :
+                            "https://cdn-icons-png.flaticon.com/512/6858/6858463.png"
+                    } alt={title}
+                        className={Css.img} />
+                    <span className={Css.title}>{title}</span>
                 </a>
             </div>
         </>
     );
 
 };
+export default Contributors;
