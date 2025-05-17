@@ -1,2 +1,0 @@
-import"./assets/main-CTSX9I4L.js";import{a}from"./assets/vendor-BuhHjXTg.js";const s=document.querySelector("#myPhoto");document.addEventListener("DOMContentLoaded",async()=>{const o=await a.get("/photos");console.log(o);const t=()=>{const e=Math.floor(Math.random()*o.data.dbPhotos.length),n=o.data.dbPhotos[e];s.src=`${a.defaults.baseURL}/photos/${n.name}`};t(),setInterval(()=>{t()},3500)});
-//# sourceMappingURL=index.js.map
