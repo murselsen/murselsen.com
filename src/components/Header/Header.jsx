@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useLocation } from 'react-router'
+import { useLocation, Link } from 'react-router-dom'
 
 // Css
 import NavbarCss from './Header.module.css'
@@ -31,8 +31,8 @@ const Header = () => {
                     <MenuItem type="menu" title="About_Me" link="about" />
                     <MenuItem type="menu" title="Projects" link="project" />
                     <MenuItem type="menu" title="Contact_Me" link="contact-me" />
-                    <li className={`${NavbarCss.Navbar__contentItem} ${NavbarCss.lang}`}><a href="#"> <img src="./images/icon/lg_enUS.png" width="25"
-                        alt="english" /> <span>_EN-US</span></a></li>
+                    <li className={`${NavbarCss.Navbar__contentItem} ${NavbarCss.lang}`}><Link to="#"> <img src="./images/icon/lg_enUS.png" width="25"
+                        alt="english" /> <span>_EN-US</span></Link></li>
                 </ul>
             </div>
         </nav>
@@ -50,7 +50,7 @@ const MenuItem = ({ title, link, }) => {
     }
     active = result;
     return (
-        <li className={active ? `${NavbarCss.Navbar__contentItem} ${NavbarCss.active}` : `${NavbarCss.Navbar__contentItem}`} ><a href={link}>{title}</a></li>
+        <li className={active ? `${NavbarCss.Navbar__contentItem} ${NavbarCss.active}` : `${NavbarCss.Navbar__contentItem}`} ><Link to={link}>{title}</Link></li>
     )
 }
 
