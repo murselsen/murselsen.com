@@ -2,7 +2,6 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import AppCss from './App.module.css'
 
-
 // Pages
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
