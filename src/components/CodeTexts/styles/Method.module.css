@@ -1,0 +1,11 @@
+.methodCode {
+    color: white;
+}
+
+.methodName {
+    color: var(--color-error)
+}
+
+.methodText {
+    color: var(--color-success)
+}
