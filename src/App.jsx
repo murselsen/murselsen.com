@@ -5,7 +5,7 @@ import AppCss from "./App.module.css";
 // Pages
 const Home = lazy(() => import("./pages/Home/Home"));
 const About = lazy(() => import("./pages/About/About"));
-import Error404 from "./pages/Error404";
+import Error404 from "./pages/Error404/Error404";
 // Components
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
