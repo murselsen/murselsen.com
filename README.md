@@ -1,12 +1,36 @@
-# React + Vite
+# murselsen.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React ve Vite kullanılarak oluşturulmuş modern bir web uygulamasıdır.
 
-Currently, two official plugins are available:
+## Başlangıç
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
-## Expanding the ESLint configuration
+```bash
+# Bağımlılıkları yükleyin
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Geliştirme sunucusunu başlatın
+npm run dev
+```
+
+## Özellikler
+
+- ⚡️ Vite ile hızlı geliştirme ortamı
+- ⚛️ React ile modern arayüz geliştirme
+- 🔥 HMR (Hot Module Replacement) desteği
+- 🧹 ESLint ile kod kalitesi kontrolü
+
+## Kullanılan Teknolojiler
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [ESLint](https://eslint.org/)
+
+## Katkıda Bulunma
+
+Katkıda bulunmak için lütfen bir pull request gönderin veya bir issue açın.
+
+## Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır.
