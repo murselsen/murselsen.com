@@ -2,7 +2,9 @@ import React from "react";
 import HomeCss from "./Css/HomeContent.module.css";
 
 // Components
-import ConstCodeText from "../../components/ConstCodeText/ConstCodeText";
+import Const from "../../components/CodeTexts/Const";
+import Link from "../../components/CodeTexts/Link";
+import TextValue from "../../components/CodeTexts/TextValue";
 
 const HomeContent = () => {
   return (
@@ -15,35 +17,28 @@ const HomeContent = () => {
         </div>
         <div className={HomeCss.content__link}>
           <p className={HomeCss.message}>// find my profile on Github:</p>
-          <ConstCodeText
-            variable="Github"
-            value="github.com/murselsen"
-            type="link"
-            link="https://github.com/murselsen"
-          />
 
+          <Const value={"Github"}>
+            <Link value={"https://github.com/murselsen"} />
+          </Const>
+          <br />
+          <p className={HomeCss.message}>// my personal email address:</p>
+
+          <Const value={"Email"}>
+            <TextValue value={"murselsen_35@hotmail.com"} />
+          </Const>
+          <br />
           <p className={HomeCss.message}>
             //my personal Social Media profiles:
           </p>
-          {/* <p className={HomeCss.message}>// my personal email address:</p> */}
-          {/* <ConstCodeText
-            variable="Email"
-            value="murselsen_35@hotmail.com"
-            type="link"
-            link="mailto:murselsen_35@hotmail.com"
-          /> */}
-          <ConstCodeText
-            variable="Instagram"
-            value="instagram.com/35.mursel"
-            type="link"
-            link="https://www.instagram.com/35.mursel/"
-          />
-          <ConstCodeText
-            variable="linkedin"
-            value="linkedin.com/murselsen/"
-            type="link"
-            link="https://www.linkedin.com/in/murselsen/"
-          />
+
+          <Const value={"Instagram"}>
+            <Link value={"http://www.instagram.com/35.mursel/"} />
+          </Const>
+
+          <Const value={"Linkedin"}>
+            <Link value={"http://www.linkedin.com/in/murselsen/"} />
+          </Const>
         </div>
       </div>
     </>
