@@ -4,7 +4,7 @@ const Method = ({ value = [], text }) => {
   return (
     <p className={styles.methodCode}>
       <span className={styles.methodName}>{value.join(".")}</span>(
-      {text && <span className={styles.methodText}>'{text}'</span>});
+      {text && <span className={styles.methodText}>'{text}'</span>})
     </p>
   );
 };

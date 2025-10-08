@@ -12,13 +12,13 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div id={AppCss.app}>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <div className={AppCss.container}>
-          <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div id={AppCss.app}>
+        <header>
+          <Header />
+        </header>
+        <main>
+          <div className={AppCss.container}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -26,13 +26,13 @@ function App() {
               {/* <Route path="/contact-me" element={<AppContact />} /> */}
               <Route path="*" element={<Error404 />} />
             </Routes>
-          </Suspense>
-        </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+          </div>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </Suspense>
   );
 }
 

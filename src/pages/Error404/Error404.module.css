@@ -3,19 +3,12 @@
     height: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-
-
 }
 
 
-
-.ErrorImage {
-    width: 312px;
-    height: 100%;
-    align-self: flex-start;
-}
 
 .ErrorTextList {
     display: flex;
@@ -34,4 +27,55 @@
 
 .ErrorTextList .ErrorTextItemIframe {
     padding-inline-start: 70px;
+}
+
+.Link {
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .ErrorPage {
+        padding-block: 50px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 40px;
+    }
+
+    .ErrorTextList {
+        font: var(--font-body-md);
+        list-style: none;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .ErrorPage {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .ErrorImage {
+        width: 180px;
+        padding-inline-start: 20px;
+    }
+
+    .ErrorTextList {
+        font: var(--font-body-sm);
+        list-style: none;
+        gap: 10px;
+    }
+
+    .ErrorTextList .ErrorTextItem {
+        padding-inline-start: 10px;
+        display: flex;
+
+
+    }
+
+
+
+
 }
