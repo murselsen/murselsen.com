@@ -29,7 +29,7 @@ const HomeContent = () => {
           </Const>
           <br />
           <p className={HomeCss.message}>
-            //my personal Social Media profiles:
+            // my personal Social Media profiles:
           </p>
 
           <Const value={"Instagram"}>

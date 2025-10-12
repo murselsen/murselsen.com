@@ -13,12 +13,12 @@ const Footer = () => {
                             <p>find me in:</p>
                         </li>
                         <li className="Footer__content-item">
-                            <a href="https://www.instagram.com/35.mursel/">
+                            <a href="https://www.instagram.com/35.mursel/" target={"_blank"}>
                                 <span>@</span> <i className="ri-instagram-fill"></i>
                             </a>
                         </li>
                         <li className="Footer__content-item">
-                            <a href="https://www.linkedin.com/in/murselsen/">
+                            <a href="https://www.linkedin.com/in/murselsen/" target={"_blank"}>
                                 <i className="ri-linkedin-fill"></i>
                             </a>
                         </li>
@@ -28,7 +28,7 @@ const Footer = () => {
                     <ul className="Footer__content-list">
                         <li className="Footer__content-item">
                             <a href="https://github.com/murselsen">
-                                <span>@murselsen</span> <i className="ri-github-fill"></i>
+                                <span>@murselsen</span> <i className="ri-github-fill" target={"_blank"}></i>
                             </a>
                         </li>
                     </ul>

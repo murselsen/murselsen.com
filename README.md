@@ -1,36 +1,23 @@
 # murselsen.com
+## Proje Hakkında
 
-Bu proje, React ve Vite kullanılarak oluşturulmuş modern bir web uygulamasıdır.
+Bu proje, React ve Vite kullanılarak oluşturulmuş hızlı ve modern bir tek sayfa uygulamasıdır. Geliştirme sırasında HMR, ESLint ve test altyapısı ile verimli bir iş akışı sunar.
 
-## Başlangıç
+### Teknolojiler
+- React, Vite, ESLint
+- Testler için Vitest veya Jest, bileşen testleri için React Testing Library
 
-Projeyi çalıştırmak için aşağıdaki adımları izleyin:
-
+### Hızlı Başlangıç
 ```bash
-# Bağımlılıkları yükleyin
 npm install
-
-# Geliştirme sunucusunu başlatın
 npm run dev
 ```
 
-## Özellikler
+### Öne Çıkan Özellikler
+- Hızlı geliştirme deneyimi (Vite)
+- Canlı yeniden yükleme (HMR)
+- Kod kalitesi için ESLint ve biçimlendirme araçları
+- Kolay dağıtım (Vercel, Netlify, Cloudflare Pages)
 
-- ⚡️ Vite ile hızlı geliştirme ortamı
-- ⚛️ React ile modern arayüz geliştirme
-- 🔥 HMR (Hot Module Replacement) desteği
-- 🧹 ESLint ile kod kalitesi kontrolü
-
-## Kullanılan Teknolojiler
-
-- [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [ESLint](https://eslint.org/)
-
-## Katkıda Bulunma
-
-Katkıda bulunmak için lütfen bir pull request gönderin veya bir issue açın.
-
-## Lisans
-
-Bu proje MIT lisansı ile lisanslanmıştır.
+### Katkıda Bulunma ve Lisans
+Katkılar PR veya issue ile memnuniyetle karşılanır. Proje MIT lisansı ile lisanslanmıştır.
