@@ -56,11 +56,11 @@
 }
 
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html {
@@ -70,7 +70,7 @@ html {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  padding: 16px;
+
   /* user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none; */

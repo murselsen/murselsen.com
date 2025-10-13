@@ -1,0 +1,9 @@
+.HomePage {
+
+    display: flex;
+    background-image: url("/green-layer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

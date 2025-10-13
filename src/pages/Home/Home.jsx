@@ -1,20 +1,14 @@
 import React from 'react';
+import styles from './Css/Home.module.css';
 import HomeContent from './HomeContent';
-import HomeMedia from './HomeMedia';
+
 const Home = () => {
-
-
     return (
-
-        <>
-            <HomeContent />
-            <HomeMedia  />
-        </>
+        <div className={styles.HomePage}>
+            <HomeContent/>
+            {/*<HomeMedia/>*/}
+        </div>
     );
 }
-
-
-
-
 
 export default Home;
