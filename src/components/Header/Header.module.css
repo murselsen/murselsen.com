@@ -96,6 +96,7 @@
      }
 
      .Navbar .Navbar__header .Navbar__headerToggle {
+         display: block;
          border-inline-start: 1px solid #314158;
      }
 
@@ -166,6 +167,7 @@
  @media (max-width: 767px) {
 
      .Navbar {
+
          position: relative;
      }
 
@@ -175,6 +177,7 @@
      }
 
      .Navbar .Navbar__header .Navbar__headerToggle {
+         display: block;
          border-inline-start: 1px solid #314158;
      }
 

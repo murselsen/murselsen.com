@@ -17,13 +17,15 @@ function App() {
         <Header />
       </header>
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          {/*<Route path="/projects" element={<AppProjects/>}/>*/}
-          {/*<Route path="/contact-me" element={<AppContact/>}/>*/}
-          <Route path="*" element={<Error404 />} />
-        </Routes>
+        <div className={AppCss.Container}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            {/*<Route path="/projects" element={<AppProjects/>}/>*/}
+            {/*<Route path="/contact-me" element={<AppContact/>}/>*/}
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+        </div>
       </main>
       <footer>
         <Footer />

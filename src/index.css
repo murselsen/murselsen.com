@@ -64,6 +64,7 @@
 }
 
 html {
+
   font-family: "Fira Code", monospace;
   background: var(--background);
   background-repeat: no-repeat;
@@ -75,10 +76,3 @@ html {
   -webkit-user-select: none;
   -moz-user-select: none; */
 }
-
-body {
-  margin: 0 auto;
-
-}
-
-/*  */
