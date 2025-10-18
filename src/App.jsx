@@ -4,6 +4,8 @@ import AppCss from "./App.module.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import {Route, Routes} from "react-router-dom";
+
+// Error Pages   
 import Error404 from "./pages/Error404/Error404.jsx";
 
 // Pages
@@ -11,6 +13,7 @@ const Home = lazy(() => import("./pages/Home/Home"));
 const About = lazy(() => import("./pages/About/About"));
 
 const App = () => {
+
     return (
         <Suspense fallback={<div>Loading...</div>}>
             <header>
