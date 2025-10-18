@@ -32,13 +32,33 @@ const AboutContent = () => {
                 <p className={Css.tag}>&nbsp;&nbsp;*/</p>
             </div>
             <div className={Css.content__gh}>
-
+                {/*https://api.github.com/gists/06c881d16e124364b32f70c30ad5a87f*/}
                 <div className={Css.content__ghList} id="ghList">
-                    <Gist data-theme={"dark"} url={"https://gist.github.com/murselsen/06c881d16e124364b32f70c30ad5a87f"} file={"env.js"} style={{'background': 'black'}} loadingComponent={() => <div>Waiting for Gist...</div>}/>
+                    <GistContent />
                 </div>
             </div>
         </div>
     )
 }
+
+const GistContent = () =>
+{
+    return (
+        <div className={Css.ghGist}>
+            <div className={Css.ghHeader}>
+                <img src={"..."} className={Css.ghHeader_Photo} />
+                <div className={Css.ghHeader_Info}>
+                    <p className={Css.ghHeader_Name}>@murselsen</p>
+                    <p className={Css.ghHeader_Date}>June 2024</p>
+                </div>
+            </div>
+            <div className={Css.ghBody}></div>
+            <div className={Css.ghFooter}>
+
+            </div>
+        </div>
+    )
+}
+
 
 export default AboutContent
