@@ -1,6 +1,8 @@
 import React from 'react';
 import Css from './Css/Projects.module.css'
-import {FaReact} from "react-icons/fa6";
+import {FaCss3, FaHtml5, FaJava, FaPhp, FaPython} from "react-icons/fa6";
+import {IoLogoJavascript} from "react-icons/io";
+
 
 // Components
 import Sidebar from "../../components/Sidebar/Sidebar";
@@ -11,12 +13,25 @@ const Projects = () => {
             <Sidebar/>
             <div className={Css.Content}>
                 <div className={Css.LanguageTabArea}>
-                    <h3 className={Css.LanguageTabArea_Title}>
-                        Projects
-                    </h3>
+                    
                     <ul className={Css.LanguageTabList}>
                         <li className={Css.LanguageTabItem}>
-                            <FaReact/> <span>React</span>
+                            <FaHtml5/> <span>Html</span>
+                        </li>
+                        <li className={Css.LanguageTabItem}>
+                            <FaCss3/> <span>Css</span>
+                        </li>
+                        <li className={Css.LanguageTabItem}>
+                            <IoLogoJavascript/> <span>Javascript</span>
+                        </li>
+                        <li className={Css.LanguageTabItem}>
+                            <FaPython/> <span>Python</span>
+                        </li>
+                        <li className={Css.LanguageTabItem}>
+                            <FaJava/> <span>Java</span>
+                        </li>
+                        <li className={Css.LanguageTabItem}>
+                            <FaPhp/> <span>Php</span>
                         </li>
                     </ul>
                 </div>

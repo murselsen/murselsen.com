@@ -6,7 +6,6 @@
 .Content {
     flex: 1;
     display: flex;
-    padding: 10px;
 }
 
 .Content .LanguageTabArea {
@@ -15,8 +14,33 @@
     width: 100%;
     color: var(--color-slate);
 
+
 }
 
-.Content .LanguageList {
+.Content .LanguageTabArea .LanguageTabArea_Title {
+    font: var(--font-heading-h5);
+    color: var(--color-indigo);
+    margin: 10px;
+}
 
+.Content .LanguageTabArea .LanguageTabList {
+    display: flex;
+    flex-wrap: wrap;
+    /*border-block-start: 1px solid var(--color-slate);*/
+    padding-inline: 0;
+}
+
+.Content .LanguageTabArea .LanguageTabList .LanguageTabItem {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 15px 32px;
+    font: var(--font-body-sm);
+    text-transform: full-size-kana;
+    border-inline: 1px solid var(--color-slate-hover);
+    border-block-end: 1px solid var(--color-slate-hover);
 }
