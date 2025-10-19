@@ -45,7 +45,6 @@
 
     .content {
         height: 100%;
-
     }
 
     /*   .content .content__introduction,
@@ -88,7 +87,7 @@
 }
 
 @media (max-width: 767px) {
-    .content{
+    .content {
         padding: 0 16px;
     }
 }

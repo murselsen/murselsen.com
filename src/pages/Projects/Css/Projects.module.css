@@ -43,4 +43,11 @@
     text-transform: full-size-kana;
     border-inline: 1px solid var(--color-slate-hover);
     border-block-end: 1px solid var(--color-slate-hover);
+    cursor: pointer;
+}
+
+.Content .LanguageTabArea .LanguageTabList .LanguageTabItem.active,
+.Content .LanguageTabArea .LanguageTabList .LanguageTabItem:hover {
+    background-color: var(--color-state);
+    color: #fff;
 }
