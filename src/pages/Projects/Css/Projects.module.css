@@ -1,0 +1,22 @@
+.ProjectsPage {
+    width: 100%;
+    display: flex;
+}
+
+.Content {
+    flex: 1;
+    display: flex;
+    padding: 10px;
+}
+
+.Content .LanguageTabArea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--color-slate);
+
+}
+
+.Content .LanguageList {
+
+}

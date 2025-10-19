@@ -31,10 +31,11 @@
 
 .content__ghList .ghGist {
 
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    color: var(--color-slate);
 }
 
 .ghGist .ghHeader {
@@ -80,8 +81,35 @@
 
 .ghGist .ghFooter {
     border-top: 1px solid #314158;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
+.ghGist .ghFooter .ghFooter_Links {
+    display: flex;
+    gap: 10px;
+}
+
+.ghGist .ghFooter .ghFooter_Link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font: var(--font-body-md);
+    padding: 12px;
+    width: max-content;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--color-state);
+    color: white;
+    text-decoration: none;
+}
+
+.ghGist .ghFooter .ghFooter_Link:hover {
+    background-color: var(--color-slate-hover);
+}
 
 @media (min-width: 768px) {
     .about__content {
@@ -98,7 +126,7 @@
     .about__content .content__gh {
         flex: 1;
         min-width: 50%;
-        border-width: 0px 1px 0px 1px;
+        /*border-width: 0px 1px 0px 1px;*/
         border-style: solid;
         border-color: var(--theme-theme-stroke, #314158);
         padding: 32px 40px;

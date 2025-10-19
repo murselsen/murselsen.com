@@ -49,10 +49,12 @@ const AboutContent = () => {
                 {/*https://api.github.com/gists/06c881d16e124364b32f70c30ad5a87f*/}
                 <div className={Css.content__ghList} id="ghList">
                     {/*selectGithubUserGists*/}
-                    {gists.map((item, index) => (
+                    {gists.length > 0 ? gists.map((item, index) => (
                             <GistContent data={item} key={index}/>
                         )
-                    )}
+                    ) : <p>
+                        No Gists Found for Profile
+                    </p>}
                 </div>
             </div>
         </div>
@@ -62,14 +64,15 @@ const AboutContent = () => {
 
 const GistContent = ({data}) => {
     const profile = useSelector(selectGithubUserProfile)
-    const {files, html_url, owner, created_at} = data;
+    const {files, html_url, owner, created_at, description} = data;
 
     return (
         <div className={Css.ghGist}>
             <div className={Css.ghHeader}>
                 <img src={owner.avatar_url} className={Css.ghHeader_Photo}/>
                 <div className={Css.ghHeader_Info}>
-                    <p className={Css.ghHeader_Name}>@{owner.login}</p>
+
+                    <p className={Css.ghHeader_Name}>@{owner.login} - {description}</p>
                     <p className={Css.ghHeader_Date}>{created_at.split("T")[0]}</p>
                 </div>
             </div>
@@ -81,7 +84,10 @@ const GistContent = ({data}) => {
                 </code>
             </div>
             <div className={Css.ghFooter}>
-                <a href={html_url} target={"_blank"}> <FaGithub/> </a>
+                <span>File: {Object.values(files)[0].filename}</span>
+                <div className={Css.ghFooter_Links}>
+                    <a href={html_url} className={Css.ghFooter_Link} target={"_blank"}> <FaGithub/> View </a>
+                </div>
             </div>
         </div>
     )

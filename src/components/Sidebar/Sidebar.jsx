@@ -1,7 +1,8 @@
 import React from 'react'
-import Css from './Css/AboutSidebar.module.css'
+import Css from './Sidebar.module.css'
 import AccordionList from '../../components/Accordion/AccordionList'
-const AboutSidebar = () => {
+
+const Sidebar = () => {
 
     const AccordionListData = [
         {
@@ -51,9 +52,9 @@ const AboutSidebar = () => {
     ];
     return (
         <div className={Css.about__sidebar}>
-            <AccordionList accordionList={AccordionListData} />
+            <AccordionList accordionList={AccordionListData}/>
         </div>
     )
 }
 
-export default AboutSidebar
+export default Sidebar;

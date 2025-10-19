@@ -1,17 +1,17 @@
 import React from 'react'
-import './About.css'
+import Css from './About.module.css'
 
 // Page Components
-import AboutSidebar from './AboutSidebar'
+import Sidebar from '../../components/Sidebar/Sidebar'
 import AboutContent from './AboutContent'
 
 
 const About = () => {
     return (
-        <>
-            <AboutSidebar />
-            <AboutContent />
-        </>
+        <div className={Css.AboutPage}>
+            <Sidebar/>
+            <AboutContent/>
+        </div>
     )
 }
 

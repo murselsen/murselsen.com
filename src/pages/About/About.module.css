@@ -1,0 +1,10 @@
+.AboutPage {
+    width: 100%;
+    display: flex;
+}
+
+@media ( max-width: 767px) {
+    .AboutPage {
+        flex-direction: column;
+    }
+}
