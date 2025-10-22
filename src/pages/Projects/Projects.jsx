@@ -1,8 +1,7 @@
 import React, {useEffect} from 'react';
 import Css from './Css/Projects.module.css'
-import {FaCodeFork, FaCss3, FaEye, FaGithubAlt, FaHtml5, FaJava, FaPhp, FaPython} from "react-icons/fa6";
-import {IoLogoJavascript} from "react-icons/io";
-
+import {FaCodeFork, FaDisplay, FaEye, FaGithubAlt} from "react-icons/fa6";
+import {GrLanguage} from "react-icons/gr";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchRepos} from "../../redux/github/thunk.js";
 // Components
@@ -26,29 +25,29 @@ const Projects = () => {
         <div className={Css.ProjectsPage}>
             <Sidebar/>
             <div className={Css.Content}>
-                <div className={Css.LanguageTabArea}>
+                {/*<div className={Css.LanguageTabArea}>*/}
 
-                    <ul className={Css.LanguageTabList}>
-                        <li className={Css.LanguageTabItem}>
-                            <FaHtml5/> <span>Html</span>
-                        </li>
-                        <li className={Css.LanguageTabItem}>
-                            <FaCss3/> <span>Css</span>
-                        </li>
-                        <li className={Css.LanguageTabItem}>
-                            <IoLogoJavascript/> <span>Javascript</span>
-                        </li>
-                        <li className={Css.LanguageTabItem}>
-                            <FaPython/> <span>Python</span>
-                        </li>
-                        <li className={Css.LanguageTabItem}>
-                            <FaJava/> <span>Java</span>
-                        </li>
-                        <li className={Css.LanguageTabItem}>
-                            <FaPhp/> <span>Php</span>
-                        </li>
-                    </ul>
-                </div>
+                {/*    <ul className={Css.LanguageTabList}>*/}
+                {/*        <li className={Css.LanguageTabItem}>*/}
+                {/*            <FaHtml5/> <span>Html</span>*/}
+                {/*        </li>*/}
+                {/*        <li className={Css.LanguageTabItem}>*/}
+                {/*            <FaCss3/> <span>Css</span>*/}
+                {/*        </li>*/}
+                {/*        <li className={Css.LanguageTabItem}>*/}
+                {/*            <IoLogoJavascript/> <span>Javascript</span>*/}
+                {/*        </li>*/}
+                {/*        <li className={Css.LanguageTabItem}>*/}
+                {/*            <FaPython/> <span>Python</span>*/}
+                {/*        </li>*/}
+                {/*        <li className={Css.LanguageTabItem}>*/}
+                {/*            <FaJava/> <span>Java</span>*/}
+                {/*        </li>*/}
+                {/*        <li className={Css.LanguageTabItem}>*/}
+                {/*            <FaPhp/> <span>Php</span>*/}
+                {/*        </li>*/}
+                {/*    </ul>*/}
+                {/*</div>*/}
                 <div className={Css.Projects}>
                     {
                         githubRepos.length > 0 ? githubRepos.map((item, index) => (
@@ -74,20 +73,23 @@ const ProjectItem = ({
             </h6>
             <div className={Css.Card}>
                 <div className={Css.Actions}>
-                    <a href={"#"} className={Css.ActionLink} target={"_blank"}>
+                    <a href={data.html_url} title={"Github Page"} className={Css.ActionLink} target={"_blank"}>
                         <FaGithubAlt/>
                     </a>
-                    <a href={"#"} className={Css.ActionLink} target={"_blank"}>
-                        <FaGithubAlt/>
-                    </a>
+                    {data.homepage !== "" &&
+                        <a href={data.homepage} title={"Live"} className={Css.ActionLink} target={"_blank"}>
+                            <FaDisplay/>
+                        </a>}
+
 
                 </div>
                 <div className={Css.Header}>
                     <h6 className={Css.Name}>
-                        {data.name}
+                        {data.fork && <FaCodeFork/>} {data.name.split("-").join(" ")}
+
                     </h6>
                     <p className={Css.Description}>
-                        {data.description}
+                        {data.description !== null ? data.description : "// No Description"}
                     </p>
                 </div>
                 <div className={Css.Body}>
@@ -98,10 +100,12 @@ const ProjectItem = ({
                         <li className={Css.StatusItem}>
                             <FaCodeFork/> <b>Fork:</b> <span>{data.forks}</span>
                         </li>
+                        <li className={Css.StatusItem}>
+                            <GrLanguage/> <b>Language:</b>
+                            <span>{data.language !== null ? data.language : "undefined"}</span>
+                        </li>
                     </ul>
-                    <div className={Css.LanguageSpan}>
-                        
-                    </div>
+
                 </div>
             </div>
         </div>
