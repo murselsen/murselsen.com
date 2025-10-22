@@ -1,11 +1,12 @@
 import {createSlice} from "@reduxjs/toolkit";
 // Thunks
-import {fetchGistById, fetchProfileGithub} from "./thunk.js";
+import {fetchGistById, fetchProfileGithub, fetchRepos} from "./thunk.js";
 
 const initialState = {
     username: "murselsen",
     profile: null,
-    gists: []
+    gists: [],
+    repos: []
 };
 
 const githubSlice = createSlice({
@@ -19,6 +20,9 @@ const githubSlice = createSlice({
                 const gistList = [];
                 gistList.push(action.payload);
                 state.gists = gistList;
+            })
+            .addCase(fetchRepos.fulfilled, (state, action) => {
+                state.repos = action.payload;
             })
 
     }

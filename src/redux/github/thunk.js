@@ -38,3 +38,20 @@ export const fetchGistById = createAsyncThunk(
         }
     }
 )
+
+export const fetchRepos = createAsyncThunk(
+    "github/fetchRepos", async (_, thunkAPI) => {
+        try {
+            const {username} = thunkAPI.getState()['github'];
+            const response = await axios.get(API_URL + "/users/" + username + "/repos");
+
+            if (response.status === 200) {
+                console.log("github/fetchRepos - Response:", response);
+                return response.data;
+            }
+        } catch (e) {
+            console.log("github/fetchRepos - Error:", e);
+            thunkAPI.rejectWithValue(e.message);
+        }
+    }
+)
