@@ -39,19 +39,23 @@ export const fetchGistById = createAsyncThunk(
     }
 )
 
+
 export const fetchRepos = createAsyncThunk(
     "github/fetchRepos", async (_, thunkAPI) => {
         try {
             const {username} = thunkAPI.getState()['github'];
-            const response = await axios.get(API_URL + "/users/" + username + "/repos");
+            const response = await axios.get(API_URL + "/users/" + username + "/repos?per_page=100");
 
             if (response.status === 200) {
                 console.log("github/fetchRepos - Response:", response);
-                return response.data;
+                let data =
+                    response.data.slice().sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+               
+                return data;
             }
         } catch (e) {
             console.log("github/fetchRepos - Error:", e);
-            thunkAPI.rejectWithValue(e.message);
+            return thunkAPI.rejectWithValue(e.message);
         }
     }
 )
