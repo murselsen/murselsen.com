@@ -3,6 +3,13 @@
     display: flex;
 }
 
+@media (max-width: 767px) {
+    .ProjectsPage {
+        flex-direction: column;
+    }
+
+}
+
 .Content {
     flex: 1;
     display: flex;
@@ -102,6 +109,7 @@
 .Project .Card:hover {
     border: 1px solid var(--color-indigo);
     background-color: rgba(207, 208, 225, 0.08);
+    zoom: 1.2;
 }
 
 .Project .Card .Actions {

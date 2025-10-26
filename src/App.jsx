@@ -12,7 +12,7 @@ import Error404 from "./pages/Error404/Error404.jsx";
 const Home = lazy(() => import("./pages/Home/Home"));
 const About = lazy(() => import("./pages/About/About"));
 const AppProjects = lazy(() => import("./pages/Projects/Projects"));
-
+const AppContact = lazy(() => import("./pages/Contact/Contact"));
 const App = () => {
 
     return (
@@ -26,7 +26,7 @@ const App = () => {
                         <Route path="/" element={<Home/>}/>
                         <Route path="/about" element={<About/>}/>
                         <Route path="/project" element={<AppProjects/>}/>
-                        {/*<Route path="/contact-me" element={<AppContact/>}/>*/}
+                        <Route path="/contact-me" element={<AppContact/>}/>
                         <Route path="*" element={<Error404/>}/>
                     </Routes>
                 </div>

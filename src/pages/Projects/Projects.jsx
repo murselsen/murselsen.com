@@ -25,29 +25,6 @@ const Projects = () => {
         <div className={Css.ProjectsPage}>
             <Sidebar/>
             <div className={Css.Content}>
-                {/*<div className={Css.LanguageTabArea}>*/}
-
-                {/*    <ul className={Css.LanguageTabList}>*/}
-                {/*        <li className={Css.LanguageTabItem}>*/}
-                {/*            <FaHtml5/> <span>Html</span>*/}
-                {/*        </li>*/}
-                {/*        <li className={Css.LanguageTabItem}>*/}
-                {/*            <FaCss3/> <span>Css</span>*/}
-                {/*        </li>*/}
-                {/*        <li className={Css.LanguageTabItem}>*/}
-                {/*            <IoLogoJavascript/> <span>Javascript</span>*/}
-                {/*        </li>*/}
-                {/*        <li className={Css.LanguageTabItem}>*/}
-                {/*            <FaPython/> <span>Python</span>*/}
-                {/*        </li>*/}
-                {/*        <li className={Css.LanguageTabItem}>*/}
-                {/*            <FaJava/> <span>Java</span>*/}
-                {/*        </li>*/}
-                {/*        <li className={Css.LanguageTabItem}>*/}
-                {/*            <FaPhp/> <span>Php</span>*/}
-                {/*        </li>*/}
-                {/*    </ul>*/}
-                {/*</div>*/}
                 <div className={Css.Projects}>
                     {
                         githubRepos.length > 0 ? githubRepos.map((item, index) => (

@@ -1,5 +1,6 @@
 .methodCode {
     color: white;
+    display: flex;
 }
 
 .methodName {
