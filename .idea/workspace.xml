@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e9cac75-3733-4ac0-9360-61d9ca4efa1b" name="Changes" comment="feat: Refactor Header component for improved readability and maintainability">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="live" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;murselsen&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;assignee&quot;: &quot;murselsen&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/murselsen/murselsen.com.git&quot;,
+    &quot;accountId&quot;: &quot;84080026-09d9-4bbd-bb63-8a8964ea6b4c&quot;
+  }
+}</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="AISelfReview" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="340YE6sTFkJmY46bNtEcjFUmjhU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.localhost:5173.executor": "Run",
+    "JavaScript Debug.run JavaScript.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "StatusDashboardGroupingRule": "true",
+    "code.cleanup.on.save": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "live",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.mocha.mocha_node_package_dir": "",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.live.executor": "Run",
+    "npm.run.executor": "Run",
+    "settings.editor.selected.configurable": "AtomSelectConfig",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\murse\Github\murselsen.com\src\components\Sidebar" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="js.build_tools.npm" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.live">
+    <configuration default="true" type="BunRunConfiguration">
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" environment="&lt;No Environment&gt;" path="">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <react-native value="" />
+      <platform value="ANDROID" />
+      <envs />
+      <only-packager />
+      <browser value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <method v="2">
+        <option name="ReactNativePackager" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" singleton="false">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="live" type="js.build_tools.npm" singleton="false" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="live" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.live" />
+        <item itemvalue="npm.live" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\murse\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e9cac75-3733-4ac0-9360-61d9ca4efa1b" name="Changes" comment="" />
+      <created>1760351843404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760351843404</updated>
+      <workItem from="1760351844818" duration="181000" />
+      <workItem from="1760352079852" duration="144000" />
+      <workItem from="1760360349288" duration="13732000" />
+      <workItem from="1760692358137" duration="19000" />
+      <workItem from="1760701620584" duration="2000" />
+      <workItem from="1760717991932" duration="656000" />
+      <workItem from="1760732873093" duration="7767000" />
+      <workItem from="1760805696368" duration="635000" />
+      <workItem from="1760806346123" duration="185000" />
+      <workItem from="1760806542092" duration="49000" />
+      <workItem from="1760806601252" duration="970000" />
+      <workItem from="1760807575734" duration="51000" />
+      <workItem from="1760807638070" duration="16570000" />
+      <workItem from="1760860334230" duration="8329000" />
+      <workItem from="1760895684559" duration="13405000" />
+      <workItem from="1760912523535" duration="646000" />
+      <workItem from="1760990981925" duration="5756000" />
+      <workItem from="1761069145987" duration="6532000" />
+      <workItem from="1761080030597" duration="181000" />
+      <workItem from="1761160587614" duration="126000" />
+      <workItem from="1761162668382" duration="8468000" />
+      <workItem from="1761247001781" duration="4162000" />
+      <workItem from="1761487103296" duration="1740000" />
+      <workItem from="1761505954841" duration="11422000" />
+      <workItem from="1761561212564" duration="1995000" />
+      <workItem from="1761565243520" duration="395000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: About bileşeninde stil güncellemeleri yapıldı, Gist bileşeni eklendi ve Home bileşeninde düzenlemeler yapıldı">
+      <option name="closed" value="true" />
+      <created>1760392177364</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760392177364</updated>
+    </task>
+    <task id="LOCAL-00002" summary="react-redux imported">
+      <option name="closed" value="true" />
+      <created>1760806027647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760806027647</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: About bileşenine Gist bileşeni eklendi, App bileşeninde düzenlemeler yapıldı ve Redux store yapılandırması eklendi">
+      <option name="closed" value="true" />
+      <created>1760811536448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760811536448</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: About bileşeninde Redux ile Gist verisi entegre edildi, Home bileşeninde kullanıcı profili güncellendi ve stil iyileştirmeleri yapıldı">
+      <option name="closed" value="true" />
+      <created>1760830754513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760830754513</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: Added Projects page with sidebar, integrated routing, and updated About component styles">
+      <option name="closed" value="true" />
+      <created>1760903891114</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760903891114</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: Updated Projects page to include multiple programming languages with icons and enhanced styling">
+      <option name="closed" value="true" />
+      <created>1760908118404</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760908118404</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: Refactor CSS styles for Home and Projects components, improving layout and responsiveness">
+      <option name="closed" value="true" />
+      <created>1760909884456</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760909884456</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: Integrate GitHub repository fetching in Projects component with Redux, enhance styling and layout">
+      <option name="closed" value="true" />
+      <created>1761169218048</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761169218048</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: Update Projects page layout, enhance card styling, and refine repository details display">
+      <option name="closed" value="true" />
+      <created>1761171374294</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1761171374294</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: Update fetchRepos thunk to include pagination and sort repositories by last updated date">
+      <option name="closed" value="true" />
+      <created>1761251100144</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761251100144</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: Update README.md with project overview, features, technologies, and usage instructions">
+      <option name="closed" value="true" />
+      <created>1761561522527</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761561522527</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: Refactor Header component for improved readability and maintainability">
+      <option name="closed" value="true" />
+      <created>1761561648844</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1761561648844</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="live" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: About bileşeninde stil güncellemeleri yapıldı, Gist bileşeni eklendi ve Home bileşeninde düzenlemeler yapıldı" />
+    <MESSAGE value="react-redux imported" />
+    <MESSAGE value="feat: About bileşenine Gist bileşeni eklendi, App bileşeninde düzenlemeler yapıldı ve Redux store yapılandırması eklendi" />
+    <MESSAGE value="feat: About bileşeninde Redux ile Gist verisi entegre edildi, Home bileşeninde kullanıcı profili güncellendi ve stil iyileştirmeleri yapıldı" />
+    <MESSAGE value="feat: Added Projects page with sidebar, integrated routing, and updated About component styles" />
+    <MESSAGE value="feat: Updated Projects page to include multiple programming languages with icons and enhanced styling" />
+    <MESSAGE value="feat: Refactor CSS styles for Home and Projects components, improving layout and responsiveness" />
+    <MESSAGE value="feat: Integrate GitHub repository fetching in Projects component with Redux, enhance styling and layout" />
+    <MESSAGE value="feat: Update Projects component with improved layout, new language display, and enhanced styling" />
+    <MESSAGE value="feat: Update Projects page layout, enhance card styling, and refine repository details display" />
+    <MESSAGE value="feat: Update fetchRepos thunk to include pagination and sort repositories by last updated date" />
+    <MESSAGE value="feat: Update README.md with project overview, features, technologies, and usage instructions" />
+    <MESSAGE value="feat: Refactor Header component for improved readability and maintainability" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Refactor Header component for improved readability and maintainability" />
+  </component>
+</project>
