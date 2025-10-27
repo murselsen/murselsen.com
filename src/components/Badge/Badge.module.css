@@ -1,9 +1,0 @@
-.Badge {
-    background-color: #45556C;
-    cursor: pointer;
-    padding: 5px 10px;
-    color: var(--font-heading-color);
-    border-radius: var(--radius-box);
-    display: flex;
-    gap: 4px;
-}

@@ -1,6 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="5173" restartOnDisconnect="true">
-    <mapping url="http://localhost:5173" local-file="$PROJECT_DIR$" />
-    <method v="2" />
-  </configuration>
-</component>
