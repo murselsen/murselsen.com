@@ -16,12 +16,13 @@
 }
 
 .ContactPage .Content .CodeArea {
-    padding: 25px 40px;
+
+    padding: 35px 40px;
 }
 
 .ContactPage .Content .FormArea {
     display: flex;
-    align-items: center;
+    padding: 35px 40px;
     justify-content: center;
 }
 

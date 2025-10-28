@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test": "vite build --analyze",
     "lint": "eslint .",
     "preview": "vite preview",
     "live": "vite build && gh-pages -d dist --branch=live"
