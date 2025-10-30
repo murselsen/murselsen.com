@@ -43,10 +43,10 @@ const Header = () => {
             >
                 <p className={NavbarCss.Navbar__contentTitle}># navigate:</p>
                 <ul className={NavbarCss.Navbar__contentList}>
-                    <MenuItem type="menu" title="Home" link="/"/>
-                    <MenuItem type="menu" title="About_Me" link="about"/>
-                    <MenuItem type="menu" title="Projects" link="project"/>
-                    <MenuItem type="menu" title="Contact_Me" link="contact-me"/>
+                    <MenuItem type="menu" title="Home" link="/" toggleClick={handleNavbarMenuToggle}/>
+                    <MenuItem type="menu" title="About_Me" link="about" toggleClick={handleNavbarMenuToggle}/>
+                    <MenuItem type="menu" title="Projects" link="project" toggleClick={handleNavbarMenuToggle}/>
+                    <MenuItem type="menu" title="Contact_Me" link="contact-me" toggleClick={handleNavbarMenuToggle}/>
 
                 </ul>
             </div>
@@ -54,7 +54,7 @@ const Header = () => {
     );
 };
 
-const MenuItem = ({title, link}) => {
+const MenuItem = ({title, link, toggleClick}) => {
     const {pathname} = useLocation();
     let result, active;
     if (link === "/") {
@@ -70,6 +70,7 @@ const MenuItem = ({title, link}) => {
                     ? `${NavbarCss.Navbar__contentItem} ${NavbarCss.active}`
                     : `${NavbarCss.Navbar__contentItem}`
             }
+            onClick={toggleClick}
         >
             <Link to={link}>{title}</Link>
         </li>

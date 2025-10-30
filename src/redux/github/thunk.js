@@ -12,14 +12,12 @@ export const fetchProfileGithub = createAsyncThunk(
             const {username} = thunkAPI.getState()['github'];
             const response = await axios.get(API_URL + `/users/${username}`);
             if (response.status === 200) {
-                console.log("github/fetchProfileGithub - Response:", response);
+
                 return response.data;
             }
         } catch (error) {
             console.log("Error:", error);
             return thunkAPI.rejectWithValue(error.message);
-        } finally {
-            console.log("Fetch Github Profile - Thunk")
         }
     }
 );
@@ -29,11 +27,11 @@ export const fetchGistById = createAsyncThunk(
         try {
             const response = await axios.get(API_URL + "/gists/" + id);
             if (response.status === 200) {
-                console.log("github/fetchGistById - Response:", response);
+
                 return response.data;
             }
         } catch (e) {
-            console.log("github/fetchGistById - Error:", e);
+            console.log("Error:",e);
             thunkAPI.rejectWithValue(e.message);
         }
     }
@@ -47,14 +45,14 @@ export const fetchRepos = createAsyncThunk(
             const response = await axios.get(API_URL + "/users/" + username + "/repos?per_page=100");
 
             if (response.status === 200) {
-                console.log("github/fetchRepos - Response:", response);
+
                 let data =
                     response.data.slice().sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
-               
+
                 return data;
             }
         } catch (e) {
-            console.log("github/fetchRepos - Error:", e);
+            console.log("Error:",e);
             return thunkAPI.rejectWithValue(e.message);
         }
     }

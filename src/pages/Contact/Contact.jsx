@@ -22,7 +22,11 @@ const Contact = props => {
         message: Yup.string().required("Message is required").min(10, "Message must be at least 10 characters")
     })
 
-    const onSubmit = () => {
+    const onSubmit = (data, event) => {
+        window.open("mailto:murselsen_35@hotmail.com?subject=Message from murselsen.com&body=" + formData["message"], "_blank");
+        alert("Message sent successfully");
+        event.resetForm();
+
     }
     const FormWatcher = ({setFormData}) => {
         const {values,} = useFormikContext();
@@ -39,10 +43,8 @@ const Contact = props => {
             <Sidebar/>
             <div className={Css.Content}>
                 <div className={Css.FormArea}>
-                    <Formik initialValues={initialValues} onChange={() => {
-                        console.log('changing');
-                    }} onSubmit={onSubmit} validationSchema={formSchema}>
-                        <Form className={Css.Form}>
+                    <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={formSchema}>
+                        <Form action={"mailto:murselsen_35@hotmail.com"} method={"post"} className={Css.Form}>
                             <div className={Css.FormGroup}>
                                 <label htmlFor={"inputName"} className={Css.FormLabel}>_name:</label>
                                 <Field type={"text"} name={"name"} id={"inputName"} placeholer={"Name Surname"}
