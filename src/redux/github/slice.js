@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { fetchGistById, fetchProfileGithub, fetchRepos } from "./thunk.js";
 
 const initialState = {
-  username: "ozncncyr",
+  username: "murselsen",
   profile: null,
   gists: [],
   repos: [],
